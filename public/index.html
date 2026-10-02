@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Organize your tasks easily</p>
+        </header>
+
+        <section class="add-task">
+            <input
+                type="text"
+                id="titleInput"
+                placeholder="Enter your task..."
+            >
+
+            <input
+                type="text"
+                id="categoryInput"
+                placeholder="Category"
+            >
+
+            <button id="addBtn">Add Task</button>
+        </section>
+
+        <section class="filter">
+            <button onclick="loadTodos()">All</button>
+            <button onclick="loadTodos(false)">Todo</button>
+            <button onclick="loadTodos(true)">Completed</button>
+        </section>
+
+        <section id="todoList"></section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
